@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  ob-cart:
+    container_name: ob-cart
+    build:
+      context: .
+      dockerfile: Dockerfile.slim
+    image: ob-cart:latest
+    ports: 
+      - "3000:3000"
+    tty: true 
+
+
+
+
